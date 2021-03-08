@@ -27,6 +27,9 @@
         window.open("https://it.search.yahoo.com/search?p=" + Search)
 
       }
+     function sd(){
+       var Search = document.getElementById('Search').value
+       window.open("https://duckduckgo.com/?q=" + Search)
    </script>
 
 
@@ -40,5 +43,6 @@
     <button type="button" name="button" onclick="search()">cerca su google</button>
     <button type="button" name="button" onclick="sb()">cerca su Bing</button>
     <button type="button" name="button" onclick="sy()">cerca su Yahoo</button>
+    <button onlick="sd()">cerca su DuckDuckGo</button>
   </body>
 </html>
