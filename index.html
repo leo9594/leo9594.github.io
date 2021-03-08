@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="dio.css">
+    <title>porn browser</title>
+  </head>
+  <body>
+
+
+   <script type="text/javascript">
+     function url() {
+        var url = document.getElementById('url').value
+        window.open(url)
+      }
+      function search() {
+        var Search = document.getElementById('Search').value
+        window.open("https://www.google.com/search?q=" + Search)
+
+      }
+      function sb() {
+        var Search = document.getElementById("Search").value
+        window.open("https://www.bing.com/search?q=" + Search)
+      }
+      function sy() {
+        var Search = document.getElementById('Search').value
+        window.oper("https://it.search.yahoo.com/search?p=" + Search)
+
+      }
+   </script>
+
+
+
+
+    <img src="pb.jpg"><br>
+    <h3>url</h3>
+    <input type="text" name="url" id="url" value="http://"> <button type="button" name="button" onclick="url()">go</button>
+    <h3>Search</h3>
+    <input type="text" name="Search" id = "Search" placeholder="ricerca"><br>
+    <button type="button" name="button" onclick="search()">cerca su google</button>
+    <button type="button" name="button" onclick="sb()">cerca su Bing</button>
+    <button type="button" name="button" onclick="sy()">cerca su Yahoo</button>
+  </body>
+</html>

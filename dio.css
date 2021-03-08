@@ -1,0 +1,16 @@
+body{
+  background-color: black;
+  text-align: center;
+}
+input{
+  width: 40%;
+  height: 20px;
+}
+h3{
+  color: orange;
+}
+button{
+  background-color:orange;
+  color:black;
+  margin: 0px;
+}
