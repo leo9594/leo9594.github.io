@@ -12,24 +12,29 @@
      function url() {
         var url = document.getElementById('url').value
         window.open(url)
+        window.location.reload()
       }
       function search() {
         var Search = document.getElementById('Search').value
         window.open("https://www.google.com/search?q=" + Search)
+        window.location.reload()
 
       }
       function sb() {
         var Search = document.getElementById("Search").value
         window.open("https://www.bing.com/search?q=" + Search)
+        window.location.reload()
       }
       function sy() {
         var Search = document.getElementById('Search').value
         window.open("https://it.search.yahoo.com/search?p=" + Search)
+        window.location.reload()
 
       }
       function sd() {
         var Search = document.getElementById('Search').value
         window.open("https://duckduckgo.com/?q=" + Search)
+        window.location.reload()
       }
    </script>
 
