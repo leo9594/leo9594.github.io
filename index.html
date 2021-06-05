@@ -12,29 +12,29 @@
      function url() {
         var url = document.getElementById('url').value
         window.open(url)
-        window.location.reload()
+        var Curl = document.getElementById('url').value="http://"
       }
       function search() {
         var Search = document.getElementById('Search').value
         window.open("https://www.google.com/search?q=" + Search)
-        window.location.reload()
+        var CSearch = document.getElementById('Search').value=""
 
       }
       function sb() {
         var Search = document.getElementById("Search").value
         window.open("https://www.bing.com/search?q=" + Search)
-        window.location.reload()
+        var CSearch = document.getElementById('Search').value=""
       }
       function sy() {
         var Search = document.getElementById('Search').value
         window.open("https://it.search.yahoo.com/search?p=" + Search)
-        window.location.reload()
+        var Search = document.getElementById('Search').value = ""
 
       }
       function sd() {
         var Search = document.getElementById('Search').value
         window.open("https://duckduckgo.com/?q=" + Search)
-        window.location.reload()
+        var Search = document.getElementById('Search').value = ""
       }
    </script>
 
@@ -42,13 +42,27 @@
 
 
     <img src="pb.jpg"><br>
+    <div>
     <h3>url</h3>
     <input type="text" name="url" id="url" value="http://"> <button type="button" name="button" onclick="url()">go</button>
     <h3>Search</h3>
     <input type="text" name="Search" id = "Search" placeholder="ricerca"><br>
-    <button type="button" name="button" onclick="search()">cerca su google</button>
-    <button type="button" name="button" onclick="sb()">cerca su Bing</button>
-    <button type="button" name="button" onclick="sy()">cerca su Yahoo</button>
-    <button type="button" name="button" onclick="sd()">cerca su DuckDuckGo</button>
+    <button type="button" name="button" onclick="search()" id="google">cerca su google</button>
+    <button type="button" name="button" onclick="sb()" id="bing">cerca su Bing</button>
+    <button type="button" name="button" onclick="sy()" id="yahoo">cerca su Yahoo</button>
+    <button type="button" name="button" onclick="sd()" id="Quack">cerca su DuckDuckGo</button>
+  </div>
+  <div class="icon">
+      <img src="https://www.youtube.com/s/desktop/bb401db8/img/favicon_32x32.png" onclick="window.open('https://youtube.com')">
+      <strong style="position:relative;top:13px;right:50px">Youtube</strong>
+      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" width="32px" height="32px" onclick="window.open('https://mail.google.com')">
+      <strong style="position:relative;right:40px;top:13px;">Gmail</strong>
+      <img src="https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png" onclick="window.open('https://twitch.tv')">
+      <strong style="position:relative;right:40px;top:13px;">twitch</strong>
+      <br>
+
+  </div>
+    <br>
+    <em id="crediti" onclick="window.location.href = 'https://it.pornhub.com/gayporn'">Powered by Leocazz0</em>
   </body>
 </html>

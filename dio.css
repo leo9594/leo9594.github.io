@@ -13,4 +13,35 @@ button{
   background-color:orange;
   color:black;
   margin: 0px;
+  border: 1px;
+  border-radius: 3px;
+  position: relative;
+  top: 5px
+}
+#crediti{
+  position: relative;
+  top: 15px;
+  left: 45%;
+  color: darkgray;
+}
+#google{
+  position: relative;
+  right: 3px;
+}
+#Quack{
+  position: relative;
+  left: 6px;
+}
+#yahoo{
+  position: relative;
+  left: 3px;
+}
+.icon{
+  color: darkgray;
+  position: relative;
+  top: 40px;
+}
+#yutub{
+  position:relative;
+  right: 10%;
 }
