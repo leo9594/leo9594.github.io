@@ -1,0 +1,19 @@
+body{
+  background-color: #222020;
+}
+.ospizio{
+  text-align: left;
+  background-color: #000000;
+}
+.actionzone{
+  position: relative;
+  top: 20px;
+}
+#linksalvati button{
+  position: relative;
+  left: 40px;
+}
+#linksalvati em{
+  position: relative;
+  right: 40px;
+}

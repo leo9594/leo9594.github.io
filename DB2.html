@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DarkBrowser 2</title>
+    <link rel="stylesheet" href="dio.css">
+    <link rel="stylesheet" href="DarkDue.css">
+  </head>
+  <body>
+    <script>
+    function url() {
+      var url = document.getElementById('url').value
+      var frame = document.getElementById('iframe').src = "https://" + url
+    }
+    function kill() {
+      var frame = document.getElementById('iframe').src = 'pb.jpg'
+    }
+    function ricerca() {
+      var search = document.getElementById('ricerca').value
+      var frame = document.getElementById('iframe').src = "https://www.bing.com/search?q=" + search
+    }
+
+    </script>
+    <div class="ospizio">
+      <img src="pb.jpg" height="86px" width="128px" onclick="window.location.href='index.html'">
+    </div>
+    <div class="SearchZone">
+      <input type="text" name="url" id="url" placeholder="URL"> <button type="button" onclick="url()">go</button>
+      <input type="text" placeholder="ricerca" id="ricerca"> <button onclick="ricerca()">cerca</button>
+    </div>
+    <div class="actionzone">
+      <iframe src="pb.jpg" width="800px" height="600px" id="iframe"></iframe>
+    </div>
+    <div class="actionzone" id="sotto">
+      <button onclick="kill()">kill</button>
+    </div>
+  </body>
+</html>
